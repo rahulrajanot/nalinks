@@ -1,9 +1,9 @@
 [
   {
-    "name": "NA 26.2 Linux",
+    "name": "NA 26.2",
     "version": "26.2",
     "platform": "Linux",
-    "purpose": "Latest NA lab",
+    "purpose": "Latest",
     "status": "Available",
     "url": "https://10.67.249.97/"
   },
@@ -11,7 +11,7 @@
     "name": "NA 25.4 Linux",
     "version": "25.4",
     "platform": "Linux",
-    "purpose": "Customer reproduction",
+    "purpose": "Lab",
     "status": "Available",
     "url": "https://10.9.223.26/"
   },
@@ -19,24 +19,144 @@
     "name": "NA 25.4 Windows",
     "version": "25.4",
     "platform": "Windows",
-    "purpose": "Windows testing",
+    "purpose": "Windows",
     "status": "Available",
     "url": "https://10.9.221.67/"
   },
   {
-    "name": "NA 24.4 RHEL8",
+    "name": "NA Windows 25.2",
+    "version": "25.2",
+    "platform": "Windows",
+    "purpose": "Windows",
+    "status": "Available",
+    "url": "https://10.67.249.142/"
+  },
+  {
+    "name": "Linux NA 25.2",
+    "version": "25.2",
+    "platform": "Linux",
+    "purpose": "Lab",
+    "status": "Available",
+    "url": "https://10.67.249.139/index.jsp"
+  },
+  {
+    "name": "NA 25.2",
+    "version": "25.2",
+    "platform": "Linux",
+    "purpose": "Lab",
+    "status": "Available",
+    "url": "https://10.9.37.99/"
+  },
+  {
+    "name": "NA 24.4 rhel8",
     "version": "24.4",
     "platform": "RHEL8",
-    "purpose": "Legacy version testing",
+    "purpose": "Lab",
     "status": "Available",
     "url": "https://10.67.249.92/"
   },
   {
-    "name": "NNM Linux",
+    "name": "NA24.4 P",
+    "version": "24.4",
+    "platform": "Linux",
+    "purpose": "Lab",
+    "status": "Available",
+    "url": "https://10.9.222.11/"
+  },
+  {
+    "name": "WinCore01 24.2",
+    "version": "24.2",
+    "platform": "Windows",
+    "purpose": "Core",
+    "status": "Available",
+    "url": "https://10.9.221.87/"
+  },
+  {
+    "name": "WinCore02 24.2",
+    "version": "24.2",
+    "platform": "Windows",
+    "purpose": "Core",
+    "status": "Available",
+    "url": "https://10.9.221.86/"
+  },
+  {
+    "name": "Linux 23.4",
+    "version": "23.4",
+    "platform": "Linux",
+    "purpose": "Lab",
+    "status": "Available",
+    "url": "https://10.9.222.128/"
+  },
+  {
+    "name": "NA 2023.05 rhel8",
+    "version": "2023.05",
+    "platform": "RHEL8",
+    "purpose": "Lab",
+    "status": "Available",
+    "url": "https://10.9.223.178/"
+  },
+  {
+    "name": "NA 2022.11 rhel8",
+    "version": "2022.11",
+    "platform": "RHEL8",
+    "purpose": "Lab",
+    "status": "Available",
+    "url": "https://10.9.221.216/"
+  },
+  {
+    "name": "NA Windows 2022.11",
+    "version": "2022.11",
+    "platform": "Windows",
+    "purpose": "Windows",
+    "status": "Available",
+    "url": "https://10.67.250.203/"
+  },
+  {
+    "name": "NA 2020.08 rhel6",
+    "version": "2020.08",
+    "platform": "RHEL6",
+    "purpose": "Legacy",
+    "status": "Available",
+    "url": "https://10.9.221.74/about.htm"
+  },
+  {
+    "name": "NA 2020.08 rhel6",
+    "version": "2020.08",
+    "platform": "RHEL6",
+    "purpose": "Legacy",
+    "status": "Available",
+    "url": "https://10.9.222.145/"
+  },
+  {
+    "name": "Core01",
+    "version": "Core",
+    "platform": "Core",
+    "purpose": "Core",
+    "status": "Available",
+    "url": "https://10.67.248.85/"
+  },
+  {
+    "name": "Core02",
+    "version": "Core",
+    "platform": "Core",
+    "purpose": "Core",
+    "status": "Available",
+    "url": "https://10.67.251.33/device.wizard.do"
+  },
+  {
+    "name": "NA Core GW",
+    "version": "Core",
+    "platform": "Gateway",
+    "purpose": "Gateway",
+    "status": "Available",
+    "url": "https://10.9.221.167/index.jsp"
+  },
+  {
+    "name": "NNMi Linux",
     "version": "Latest",
-    "platform": "NNM",
-    "purpose": "NNM integration testing",
-    "status": "Maintenance",
+    "platform": "NNMi",
+    "purpose": "NNMi",
+    "status": "Available",
     "url": "http://10.67.249.98/nnm/"
   }
 ]
