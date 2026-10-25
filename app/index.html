@@ -1,1 +1,57 @@
-<!DOCTYPE html><html><head><title>NA Portal</title><style>body{font-family:Arial;margin:40px}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:8px}th{background:#f2f2f2}</style></head><body><h1>NA Environment Portal</h1><table><thead><tr><th>Name</th><th>Platform</th><th>Link</th></tr></thead><tbody id="t"></tbody></table><script>fetch('versions.json').then(r=>r.json()).then(d=>{let h='';d.forEach(x=>h+=`<tr><td>${x.name}</td><td>${x.platform}</td><td><a href="${x.url}" target="_blank">Open</a></td></tr>`);document.getElementById('t').innerHTML=h;});</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal for OpenText Network Automation lab environments">
+  <title>NA Environment Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div>
+        <p class="eyebrow">OpenText Network Automation</p>
+        <h1>NA Environment Portal</h1>
+        <p class="subtitle">Quick access to lab and test environments</p>
+      </div>
+      <div class="header-badge">GitOps managed</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls" aria-label="Environment filters">
+      <label class="field search-field">
+        <span>Search environments</span>
+        <input id="searchInput" type="search" placeholder="Search by name, version, platform or purpose">
+      </label>
+      <label class="field">
+        <span>Platform</span>
+        <select id="platformFilter">
+          <option value="all">All platforms</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>Status</span>
+        <select id="statusFilter">
+          <option value="all">All statuses</option>
+          <option value="Available">Available</option>
+          <option value="Maintenance">Maintenance</option>
+        </select>
+      </label>
+    </section>
+
+    <div class="summary-row">
+      <p id="environmentCount" class="count" aria-live="polite"></p>
+      <button id="clearFilters" type="button" class="clear-button">Clear filters</button>
+    </div>
+
+    <section id="environmentGrid" class="environment-grid" aria-label="NA environments"></section>
+    <div id="emptyMessage" class="message hidden">No matching NA environments found.</div>
+    <div id="errorMessage" class="message error hidden" role="alert"></div>
+  </main>
+
+  <footer class="footer">Managed with GitHub Actions, Argo CD and Kubernetes</footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

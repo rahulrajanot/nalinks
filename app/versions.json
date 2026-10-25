@@ -1,17 +1,42 @@
 [
   {
-    "name": "NA 26.2",
+    "name": "NA 26.2 Linux",
+    "version": "26.2",
     "platform": "Linux",
+    "purpose": "Latest NA lab",
+    "status": "Available",
     "url": "https://10.67.249.97/"
   },
   {
     "name": "NA 25.4 Linux",
+    "version": "25.4",
     "platform": "Linux",
+    "purpose": "Customer reproduction",
+    "status": "Available",
     "url": "https://10.9.223.26/"
   },
   {
-    "name": "NA Windows 25.2",
+    "name": "NA 25.4 Windows",
+    "version": "25.4",
     "platform": "Windows",
-    "url": "https://10.67.249.142/"
+    "purpose": "Windows testing",
+    "status": "Available",
+    "url": "https://10.9.221.67/"
+  },
+  {
+    "name": "NA 24.4 RHEL8",
+    "version": "24.4",
+    "platform": "RHEL8",
+    "purpose": "Legacy version testing",
+    "status": "Available",
+    "url": "https://10.67.249.92/"
+  },
+  {
+    "name": "NNM Linux",
+    "version": "Latest",
+    "platform": "NNM",
+    "purpose": "NNM integration testing",
+    "status": "Maintenance",
+    "url": "http://10.67.249.98/nnm/"
   }
 ]
