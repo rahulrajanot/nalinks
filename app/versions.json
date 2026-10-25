@@ -1,0 +1,17 @@
+[
+  {
+    "name": "NA 26.2",
+    "platform": "Linux",
+    "url": "https://10.67.249.97/"
+  },
+  {
+    "name": "NA 25.4 Linux",
+    "platform": "Linux",
+    "url": "https://10.9.223.26/"
+  },
+  {
+    "name": "NA Windows 25.2",
+    "platform": "Windows",
+    "url": "https://10.67.249.142/"
+  }
+]
