@@ -25,14 +25,18 @@ function safeUrl(value) {
 
 async function checkStatus(url) {
   try {
-    await fetch(url, {
-      method: 'HEAD',
-      mode: 'no-cors',
-      cache: 'no-store'
+    const testUrl = url.endsWith("/")
+      ? url + "index.jsp"
+      : url + "/index.jsp";
+
+    const response = await fetch(testUrl, {
+      method: "GET",
+      cache: "no-store"
     });
-    return 'Available';
+
+    return response.ok ? "Available" : "Unavailable";
   } catch {
-    return 'Unavailable';
+    return "Unavailable";
   }
 }
 
