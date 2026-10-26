@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: na-portal
-          image: ghcr.io/rahulrajanot/nalinks:c0df91b
+          image: ghcr.io/rahulrajanot/nalinks:7749fde
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
