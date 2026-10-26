@@ -48,3 +48,8 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 42px); }
 .hidden { display: none; }
 .footer { text-align: center; color: var(--muted); padding: 10px 20px 30px; }
 @media (max-width: 760px) { .controls { grid-template-columns: 1fr; } .header-content { align-items: flex-start; flex-direction: column; } }
+
+.status-unavailable {
+  color: var(--danger);
+  background: #fde7e7;
+}
